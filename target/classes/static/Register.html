@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styleRegister.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/funcionesRegister.js"></script>
+
+    <title>Te lo Reparo LTDA</title>
+    <link rel="icon" type="image/png" href="settings.png">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="title"><span>Crear una Cuenta</span></div>
+            <form action="#">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Nombre Completo</span>
+                        <input type="text" id="username" required>
+                    </div>
+                    
+                    <div class="input-box">
+                        <span class="details">Email</span>
+                        <input type="email" id="useremail" required>
+                    </div>
+                    
+                    <div class="input-box">
+                        <span class="details">Contraseña</span>
+                        <input type="text" id="password" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Confirmar tu contraseña</span>
+                        <input type="text" id="passwordrepeat" required>
+                    </div>
+                </div>
+                
+                <div class="button">
+                    <input onclick="registrar()" type="submit" value="Registrar">
+                </div>
+                <div class="signup-link">¿Ya tienes cuenta? <a href="index.html">Inicia sesión aquí</a></div>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Antique&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Shippori Antique', sans-serif;
+}
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-image: url(../fondoWeb.jpg);
+}
+
+::selection{
+    background: rgba(128, 121, 230, 0.3);
+}
+
+/*Caja base*/
+.container{
+  max-width: 700px;
+  width: 100%;
+  background-color: #fff;
+  padding: 0px 0px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+  align-items: center;
+}
+
+/*Barra del titulo "Crear una cuenta"*/
+.content .title{
+    height: 90px;
+    width: 700px;
+    margin: 0px 0px;
+    /*background: linear-gradient(135deg, #71b7e6, #9b59b6);*/
+    background-color: #7cc7c8;
+    border-radius: 10px 10px 0 0;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content .input-box{
+  padding: 0px 30px ;
+}
+
+/*Titulos de los campos a llenar*/
+.content form .user-details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+form .user-details .input-box{
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+form .input-box span.details{
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+/*Campos a llenar
+Sombra cuando se selecciona para escribir*/
+form .user-details input:focus{
+  border-color: #45a3b9;
+  box-shadow: inset 0px 0px 2px 2px rgba(130, 62, 185, 0.25);
+}
+/*Posición y tamaño de los campos*/
+.user-details .input-box input{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+/*Botones*/
+form .button{
+   height: 45px;
+   margin: 5px 35px;
+}
+
+form .button input{
+   height: 100%;
+   width: 100%;
+   border-radius: 5px;
+   border: none;
+   color: #fff;
+   font-size: 18px;
+   font-weight: 500;
+   letter-spacing: 1px;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   background: #45a3b9;
+}
+
+ form .button input:hover{
+  transform: scale(0.99);
+  background: #3d93a7;
+  }
+ @media(max-width: 584px){
+ .container{
+  max-width: 100%;
+}
+form .user-details .input-box{
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  
+  .content form .user-details{
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+  .user-details::-webkit-scrollbar{
+    width: 5px;
+  }
+  }
+  @media(max-width: 459px){
+  .container .content .category{
+    flex-direction: column;
+  }
+}
+
+/*Linea de texto con hipervinculo*/
+.content form .signup-link{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 35px;
+    font-size: 17px;
+  }
+  .content form .signup-link a{
+    color: #ec406a;
+    text-decoration: none;
+  }
+  form .signup-link a:hover{
+    text-decoration: underline;
+  }
+
+

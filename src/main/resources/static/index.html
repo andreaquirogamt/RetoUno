@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/funcionesLogin.js"></script>
+
+    <title>Te lo Reparo LTDA</title>
+    <link rel="icon" type="image/png" href="settings.png">
+
+</head>
+
+<body>
+    <div class="logo">
+        <img src="LogoHorizontal.png" width=20%">
+
+    </div>
+    <div class="container">
+        <div class="wrapper">
+            <div class="title"><span>Iniciar Sesion</span></div>
+            <form action="#">
+                <div class="row">
+                    <i class="fas fa-user"></i>
+                    <input type="email" placeholder="Email" id="useremail" required>
+                </div>
+                <div class="row">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Contraseña" id="password" >
+                </div>
+
+                <div class="row button">
+                    <input onclick="login()" type="submit" value="Registrar">
+                </div>
+                <div class="signup-link">¿Aún no tienes cuenta? <a href="Register.html">Créala aquí</a></div>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
